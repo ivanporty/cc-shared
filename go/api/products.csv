@@ -1,0 +1,45 @@
+id,title,doc_url,release_level,category
+2,Cloud Vision API,cloud.google.com/vision/,GA,Cloud AI
+3,Cloud Speech to Text API,cloud.google.com/speech-to-text/,GA,Cloud AI
+4,Cloud Translation API,cloud.google.com/translate/,GA,Cloud AI
+5,Cloud Natural Language API,cloud.google.com/natural-language/,GA,Cloud AI
+8,Dialogflow,cloud.google.com/dialogflow-enterprise/,GA,Cloud AI
+9,Cloud Spanner,cloud.google.com/spanner/,GA,Cloud Databases
+10,Data Loss Prevention API (DLP),cloud.google.com/dlp/,GA,GCP Security and Privacy
+12,Cloud Tasks,cloud.google.com/tasks/,GA,Cloud Serverless
+14,Cloud Datastore,cloud.google.com/datastore/,GA,Cloud Databases
+16,Stackdriver Monitoring,cloud.google.com/monitoring/,GA,Stackdriver
+17,Stackdriver Logging,cloud.google.com/logging/,GA,Stackdriver
+19,Cloud PubSub,cloud.google.com/pubsub/,GA,Cloud Data Analytics
+21,Cloud Composer,cloud.google.com/composer/,BETA,Cloud Data Analytics
+33,Cloud Bigtable,cloud.google.com/bigtable/,GA,Cloud Databases
+34,Cloud SQL,cloud.google.com/sql/,GA,Cloud Databases
+46,Cloud Billing,cloud.google.com/billing/,GA,Google Cloud Platform
+48,Compute Engine,cloud.google.com/compute/,GA,Google Cloud Platform
+49,Cloud Build,cloud.google.com/cloud-build/,GA,Cloud CI CD
+50,Cloud Dataflow,cloud.google.com/dataflow/,GA,Cloud Data Analytics
+54,Cloud Dataproc,cloud.google.com/dataproc/,GA,Cloud Data Analytics
+55,Stackdriver Debugger,cloud.google.com/debugger/,GA,APM
+56,Cloud DNS,cloud.google.com/dns/,GA,Cloud Network
+58,Stackdriver Error Reporting,cloud.google.com/error-reporting/,GA,Stackdriver
+60,Cloud IAM,cloud.google.com/iam/,GA,GCP Security and Privacy
+63,Kubernetes Engine,cloud.google.com/kubernetes-engine/,GA,OSP (GKE and Anthos)
+70,Resource Manager,cloud.google.com/resource-manager/,GA,CSP Identity Policy and Infrastructure
+74,Stackdriver Trace,cloud.google.com/trace/,GA,APM
+89,Cloud OS Login API,cloud.google.com/compute/docs/oslogin/,GA,Google Cloud Platform
+90,Cloud Runtime Config API,cloud.google.com/deployment-manager/runtime-configurator/,BETA,Google Cloud Platform
+91,Binary Authorization,cloud.google.com/binary-authorization/,BETA,GCP Security and Privacy
+98,Cloud Healthcare API,cloud.google.com/healthcare/,BETA,Cloud Healthcare and Life Sciences
+101,Deployment Manager,cloud.google.com/deployment-manager/,GA,Google Cloud Platform
+105,Service Usage API,cloud.google.com/service-usage/,GA,Cloud Services Platform
+106,Service Infrastructure,cloud.google.com/service-infrastructure/,GA,Cloud Services Platform
+110,Cloud Storage Transfer Service,cloud.google.com/storage-transfer/,GA,Cloud Storage
+111,Cloud Asset Inventory API,cloud.google.com/resource-manager/docs/cloud-asset-inventory/,ALPHA,GCP Security and Privacy
+134,Cloud Scheduler,cloud.google.com/scheduler/,GA,Cloud Serverless
+187,Key and Secret Management,null,LAUNCH_STAGE_UNSPECIFIED,GCP Security and Privacy
+196,BigQuery Storage,cloud.google.com/bigquery/docs/reference/storage/,BETA,BigQuery Product Area
+205,AutoML,null,LAUNCH_STAGE_UNSPECIFIED,Cloud AI
+225,Cloud AI Solutions,null,LAUNCH_STAGE_UNSPECIFIED,Cloud AI
+286,Cloud Life Sciences,cloud.google.com/life-sciences/,BETA,Cloud Healthcare and Life Sciences
+292,Cloud Storage,null,LAUNCH_STAGE_UNSPECIFIED,GCP Core Infra
+296,AppEngine Admin API,cloud.google.com/appengine/docs/admin-api/,GA,Cloud Serverless
