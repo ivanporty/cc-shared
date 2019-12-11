@@ -2,7 +2,8 @@
 <module version="4">
   <component name="FacetManager">
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="Native " useProjectSettings="false" isTestModule="false" externalProjectId="cc-shared">
+      <configuration version="3" platform="Native " allPlatforms="Native []" useProjectSettings="false" isTestModule="false" externalProjectId="cc-shared">
+        <dependsOnModuleNames>cc-shared_commonMain</dependsOnModuleNames>
         <sourceSets>
           <sourceSet>cc-shared.commonMain</sourceSet>
         </sourceSets>
