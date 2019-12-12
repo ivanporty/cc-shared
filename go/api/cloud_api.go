@@ -18,7 +18,7 @@ type ApiProduct struct {
 	Category string
 }
 
-var jsonData []byte
+var apiProductList []byte
 
 func LoadMeta(router *mux.Router) {
 
@@ -39,29 +39,32 @@ func LoadMeta(router *mux.Router) {
 	var api ApiProduct
 	var allApis []ApiProduct
 
-	for _, each := range csvData {
-		api.Title = each[1]
-		api.DocUrl = each[2]
-		api.Category = each[4]
+	// skip first line - header.
+	for i := 1; i < len(csvData); i++ {
+		api.Title = csvData[i][1]
+		api.DocUrl = csvData[i][2]
+		api.Category = csvData[i][4]
 		allApis = append(allApis, api)
 	}
 
 	// Convert to JSON
-	jsonData, err = json.Marshal(allApis)
+	apiProductList, err = json.Marshal(allApis)
 	if err != nil {
 		log.Error(err)
 	}
 
-	log.Info(string(jsonData))
+	log.WithField("loaded APIs", len(apiProductList)).Info(string(apiProductList))
 
-	router.HandleFunc("/api", ApiList)
+	router.HandleFunc("/api/list", ApiList)
 	router.HandleFunc("/api/enable/{apiId}", EnableApi)
 	router.HandleFunc("/api/disable/{apiId}", DisableApi)
 }
 
 func ApiList(w http.ResponseWriter, r *http.Request) {
-	w.WriteHeader(http.StatusOK)
-	fmt.Fprintf(w, "%s\n", string(jsonData))
+	w.Header().Set("Content-Type", "application/json")
+	fmt.Fprintf(w, "%s\n", string(apiProductList))
+
+	log.Info("Requested API list, served successfully")
 }
 
 func EnableApi(w http.ResponseWriter, r *http.Request) {

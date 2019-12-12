@@ -15,5 +15,5 @@ func main() {
 	api.LoadMeta(r)
 
 	log.Info("Starting Cloud Code Shared Server")
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(":1205", nil))
 }
