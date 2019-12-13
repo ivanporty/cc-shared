@@ -20,7 +20,7 @@ type ApiProduct struct {
 
 var apiProductList []byte
 
-func LoadMeta(router *mux.Router) {
+func InitApis(router *mux.Router) {
 
 	csvFile, err := os.Open("./api/products.csv")
 	if err != nil {
@@ -53,7 +53,7 @@ func LoadMeta(router *mux.Router) {
 		log.Error(err)
 	}
 
-	log.WithField("loaded APIs", len(apiProductList)).Info(string(apiProductList))
+	log.Info("loaded APIs: ", len(csvData), string(apiProductList))
 
 	router.HandleFunc("/api/list", ApiList)
 	router.HandleFunc("/api/enable/{apiId}", EnableApi)
